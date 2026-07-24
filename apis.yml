@@ -1,7 +1,26 @@
 aid: cassie
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cassie.png
 name: Cassie
-description: Cassie is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Cassie (Aircassie) develops advanced air filtration technology for healthcare
+  and indoor environments. Its flagship CASSIE system uses patented filtration to eliminate
+  mold, viruses, and bacteria with zero harmful emissions, contrasting with UV and ionizer
+  systems that emit ozone. The company markets 99.9% effectiveness against viruses and
+  bacteria, a 59-second disinfection cycle, and 24-hour air quality monitoring with
+  real-time data. Cassie is a hardware and environmental-technology company backed by
+  Techstars; it was added to the API Evangelist network as a portfolio lead. As of this
+  enrichment pass it publishes a marketing website (Wix) with no public API, developer
+  documentation, SDKs, or other machine-readable API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/cassie/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Air Filtration
+- Air Quality
+- Healthcare
+- Environmental Technology
+- Hardware
+- Air Quality Monitoring
+- Medical Devices
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cassie-domain-security.yml
 - type: Website
   url: https://aircassie.com/
+- type: About
+  url: https://www.aircassie.com/about
+- type: Support
+  url: https://www.aircassie.com/contact-8
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
